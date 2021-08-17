@@ -1,0 +1,27 @@
+﻿@model TestApplication7.Models.ViewRatingModel
+@{
+    ViewBag.Title = "Post";
+}
+
+
+@{
+    Layout = null;
+}
+
+<h2>Post</h2>
+<p>
+    Here is the rating response for ICS Next Day for a
+<p>Error: @Model.Error</p>
+<p>Message: @Model.Message</p>
+@Model.Ratemodel.Length
+@Model.Ratemodel.Height
+@Model.Ratemodel.Width
+
+<br />
+    Weighing : @Model.Ratemodel.Weight Lbs
+    <br />
+    To Postal Code: @Model.Ratemodel.PostalCode
+    </p>
+    <p>Result for rating is @Model.EstimatedCost</p>
+
+    <p>@Html.ActionLink("Rate again?", "Index", "Home")</p>
